@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.huy.json_khoapham.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From USD to "
+        android:layout_gravity="center_horizontal" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="293dp"
+        android:id="@+id/list"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:text="Convert"
+        android:textSize="20dp"
+        android:textColorHighlight="#4bfc10"
+        android:textIsSelectable="true"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="From"/>
+    <Spinner android:id="@+id/listFrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="To"/>
+    <Spinner android:id="@+id/listTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Amount"/>
+        <EditText android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""/>
+
+    <Button android:id="@+id/confirm"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center_horizontal" />
+        <TextView android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="ketqua"/>
+    </LinearLayout>
+</ScrollView>
